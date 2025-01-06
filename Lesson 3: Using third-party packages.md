@@ -29,6 +29,8 @@ data = pd.read_csv('car_data.csv')
 ​
 print(data)
 ```
+---
+```bash
                          Model    Price  Year  Kilometer
 0    Honda Amaze 1.2 VX i-VTEC  5050.00  2017      87150
 1              Honda Brio V MT  3510.00  2014      39276
@@ -43,6 +45,7 @@ print(data)
 157               Honda City V  4800.00  2015      49000
 
 [158 rows x 4 columns]
+```
 How do you show only cars that sold for more than $10,000? Let's ask the chatbot!
 
 🤖 Use the Chatbot:
