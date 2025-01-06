@@ -56,7 +56,7 @@ data = pd.read_csv('car_data.csv')
 print(data)
 ```
 The data looks like this when I print it:
-```basg
+```bash
 Model Price Year Kilometer
 0 Honda Amaze 1.2 VX i-VTEC 5050.00 2017 87150
 1 Honda Brio V MT 3510.00 2014 39276
