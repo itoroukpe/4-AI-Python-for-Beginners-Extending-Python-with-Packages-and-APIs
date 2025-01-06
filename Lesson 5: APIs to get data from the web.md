@@ -10,7 +10,7 @@ import requests
 from aisetup import print_llm_response
 from dotenv import load_dotenv
 ```
-Retrieving weather data from an API
+### Retrieving weather data from an API
 In this section, you'll use an API to retrieve real time weather data from https://openweathermap.org.
 
 Most APIs require an API key. You can think of this as a password that is unique to you.
@@ -56,7 +56,7 @@ print(data)
 ```
 Note The responses you get from APIs are usually given in JSON (JavaScript Object Notation) format, which is a variation on a python dictionary.
 
-Display the weather forecast
+### Display the weather forecast
 To display the weather forecast in a nicely formatted way, you need to extract information from the data dictionary. Let's ask the chatbot how to do this:
 ```bash
 🤖 Use the Chatbot:
