@@ -21,17 +21,17 @@ You can visit the openweathermap website for information about setting up an API
 
 Run the following cell to setup the API key for this lesson:
 ```bash
-# Get the Weather API key from the .env file
-# https://openweathermap.org/price
+Get the Weather API key from the .env file
+https://openweathermap.org/price
 load_dotenv('.env', override=True)
 api_key = os.getenv('WEATHER_API_KEY')
 ```
 Set up the latitude and longitude coordinates to pass to the API:
 ```bash
-# Store the latitude value in the 'lat' variable
+Store the latitude value in the 'lat' variable
 lat = 37.4419   # Palo Alto, CA
 ​
-# Store the longitude value in the 'long' variable
+Store the longitude value in the 'long' variable
 lon = -122.1430
 ```
 Note: Feel free to change the lat and lon values above to your current location or a place you would like to retrieve weather data!
@@ -42,16 +42,16 @@ These are added as part of the url f-string below:
 ```bash
 url = f"https://api.openweathermap.org/data/2.5/forecast?units=metric&cnt=1&lat={lat}&lon={lon}&appid={api_key}"
 ​```
-# Use the get function from the requests library to store the response from the API
+
+Use the get function from the requests library to store the response from the API
 ```bash
 response = requests.get(url)
 ```
 Now extract the data from the response variable:
 ```bash
-# Take the response from the API (in JSON) and assign it to a Python dictionary
+Take the response from the API (in JSON) and assign it to a Python dictionary
 data = response.json()
-​
-# Print
+​Print
 print(data)
 ```
 Note The responses you get from APIs are usually given in JSON (JavaScript Object Notation) format, which is a variation on a python dictionary.
@@ -97,7 +97,7 @@ suggest an appropriate outdoor outfit.
 Forecast: {weather_string}
 """
 ​
-# Print the LLM response
+Print the LLM response
 print_llm_response(prompt)
 ```
 ### Extra practice
@@ -107,7 +107,7 @@ Note: To find your current coordinates, you can navigate to Google Maps and righ
 
 Finding your coordinates using Google Maps
 ```bash
-# Complete the code below to get the "feels_like" temperature at your current location
+Complete the code below to get the "feels_like" temperature at your current location
 lat = 
 lon = 
 url = f"https://api.openweathermap.org/data/2.5/forecast?units=metric&cnt=1&lat={lat}&lon={lon}&appid={api_key}"
