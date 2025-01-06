@@ -94,7 +94,7 @@ You can also filter by other columns in the data, for example the year:
 ```bash
 print(data[data["Year"]==2015])
 ```
-# Show all the cars from the 2015 
+Show all the cars from the 2015 
 ```bash
 print(data[data["Year"]==2015])
 ```
