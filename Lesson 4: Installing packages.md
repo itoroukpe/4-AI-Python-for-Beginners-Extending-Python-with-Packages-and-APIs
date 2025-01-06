@@ -136,10 +136,10 @@ Use the celsius_to_fahrenheit function in the aisetup package to calculate the F
 You'll need to complete the import statement and the calculation.
 
 ​```bash
-# Complete the import statement
+#Complete the import statement
 from
 ​
-# Complete the calculation
+#Complete the calculation
 zero_celsius_in_fahrenheit =
 print (zero_celsius_in_fahrenheit)
 ```
