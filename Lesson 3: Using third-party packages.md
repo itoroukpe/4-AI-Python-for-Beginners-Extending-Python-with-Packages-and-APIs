@@ -71,6 +71,8 @@ Next, run the code the LLM wrote to filter the data by price:
 # Code to show only the cars with a price >= 10000
 print(data[data["Price"]>=10000])
 ```
+---
+```bash
                                     Model    Price  Year  Kilometer
 21                           Honda City V  10600.0  2019      12382
 30               Honda City ZX CVT Petrol  17000.0  2022       8530
@@ -87,6 +89,7 @@ print(data[data["Price"]>=10000])
 121                         Honda City VX  12550.0  2021      10000
 134   Honda City V CVT Petrol [2017-2019]  10400.0  2019      18000
 143                Honda CR-V 2.0L 2WD AT  11300.0  2015      50000
+```
 You can also filter by other columns in the data, for example the year:
 ```bash
 print(data[data["Year"]==2015])
@@ -95,6 +98,8 @@ print(data[data["Year"]==2015])
 ```bash
 print(data[data["Year"]==2015])
 ```
+---
+```bash
                            Model    Price  Year  Kilometer
 20        Honda Mobilio S Diesel   4750.0  2015      72000
 24        Honda Jazz V AT Petrol   5450.0  2015      42000
@@ -114,6 +119,7 @@ print(data[data["Year"]==2015])
 143       Honda CR-V 2.0L 2WD AT  11300.0  2015      50000
 156            Honda City SV CVT   5900.0  2015     116592
 157                 Honda City V   4800.0  2015      49000
+```
 Pandas includes built-in tools to calculate interesting statistics, like the median selling value for the cars from 2015. Here's the code:
 ```bash
 print(filtered_data["Price"].median())
