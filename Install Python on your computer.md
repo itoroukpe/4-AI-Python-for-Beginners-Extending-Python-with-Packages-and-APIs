@@ -1,4 +1,5 @@
-Install Python on your computer (Optional)
+## Install Python on your computer (Optional)
+
 As you have seen in this course, Python is one of the most popular programming languages. To easily write and run Python programs on your computer, you need a code editor like the Jupyter Notebook used in the learning platform.
 
 A convenient way to get everything you need is by downloading Anaconda, which provides Python, Jupyter Notebook, and many other tools in a single installation. In this tutorial, you will see how to download and install Anaconda on your computer, how to create a Jupyter notebook, and how to get your own API keys from OpenWeather and OpenAI.
