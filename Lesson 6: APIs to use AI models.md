@@ -38,8 +38,6 @@ load_dotenv('.env', override=True)
 openai_api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key = openai_api_key)
 
-orID: org-5D7ZL7FqthfAQv7Le48zQzHJ
-ProjectID: proj_xnuhZDgB1gBAfVBkKw6UFGQN
 
 ```
 ### Revisiting get_llm_response
