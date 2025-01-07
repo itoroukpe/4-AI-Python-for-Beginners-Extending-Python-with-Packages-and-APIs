@@ -33,7 +33,7 @@ def get_llm_response(prompt):
 ### Setting up the API key
 To use the OpenAI API service you need an API key. Run the following code to set up the key in this learning environment:
 ```bash
-Get the OpenAI API key from the .env file
+#Get the OpenAI API key from the .env file
 load_dotenv('.env', override=True)
 openai_api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key = openai_api_key)
