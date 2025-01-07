@@ -6,8 +6,8 @@ A convenient way to get everything you need is by downloading Anaconda, which pr
 
 For more detailed installation instructions specific to your operating system, or if you encounter any problems, please visit this link.
 
-Downloading Anaconda
-
+### Downloading Anaconda
+```bash
 Go to Anaconda and:
 
 Click on "Free Download"
@@ -21,7 +21,7 @@ Click on the download button
 
 Download
 These steps will usually get you the appropriate distribution for your operating system. If it doesn't provide you with the correct distribution, you can check the list under Anaconda installers and find the one that best suits you.
-
+```
 ### Installing Anaconda
 ### MacOS
 ```bash
