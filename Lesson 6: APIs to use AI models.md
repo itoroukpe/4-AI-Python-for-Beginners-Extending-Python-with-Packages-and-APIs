@@ -37,6 +37,10 @@ To use the OpenAI API service you need an API key. Run the following code to set
 load_dotenv('.env', override=True)
 openai_api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key = openai_api_key)
+
+orID: org-5D7ZL7FqthfAQv7Le48zQzHJ
+ProjectID: proj_xnuhZDgB1gBAfVBkKw6UFGQN
+
 ```
 ### Revisiting get_llm_response
 Here is the code you saw in the slides to define the get_llm_response function:
