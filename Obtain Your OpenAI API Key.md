@@ -103,3 +103,74 @@ For added security, consider storing the API key in a `.env` file and using a li
 ---
 
 By following these steps, you should be able to resolve the `OpenAIError` and successfully initialize the `OpenAI` client. Let me know if you encounter any additional issues!
+---
+To create a `.env` file directly in Jupyter Notebook, follow these steps:
+
+---
+
+### **Step-by-Step Instructions**
+
+#### **1. Use `%%writefile` Magic Command**
+The `%%writefile` magic command allows you to create and write to a file in a Jupyter Notebook cell.
+
+1. Open a new cell in your notebook.
+2. Use the following code to create a `.env` file and write your API key into it:
+   ```python
+   %%writefile .env
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
+3. Replace `your_api_key_here` with your actual API key.
+
+4. Run the cell. This will create a `.env` file in the same directory as your notebook.
+
+---
+
+#### **2. Verify the `.env` File**
+You can verify the file was created by listing the files in the directory:
+
+```python
+!ls
+```
+
+If you’re using Windows, use:
+
+```python
+!dir
+```
+
+---
+
+#### **3. Load the `.env` File in Your Notebook**
+Use the `python-dotenv` library to load the `.env` file and access the environment variables.
+
+1. Install the `python-dotenv` library:
+   ```python
+   !pip install python-dotenv
+   ```
+
+2. Load the `.env` file in your notebook:
+   ```python
+   from dotenv import load_dotenv
+   import os
+
+   # Load environment variables from .env file
+   load_dotenv()
+
+   # Access the API key
+   api_key = os.getenv('OPENAI_API_KEY')
+   print(api_key)  # Verify the API key is loaded
+   ```
+
+---
+
+### **Tips for Managing the `.env` File**
+1. **Keep it secure:**
+   - Avoid committing `.env` files to version control (e.g., GitHub). Add `.env` to your `.gitignore` file if you use Git.
+
+2. **Reuse the `.env` file:**
+   - The `.env` file can be used across multiple scripts and notebooks in the same project directory.
+
+---
+
+With these steps, you can successfully create and use a `.env` file in your Jupyter Notebook! Let me know if you need further assistance.
