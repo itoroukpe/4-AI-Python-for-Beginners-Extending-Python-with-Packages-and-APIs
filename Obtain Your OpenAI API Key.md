@@ -172,5 +172,46 @@ Use the `python-dotenv` library to load the `.env` file and access the environme
    - The `.env` file can be used across multiple scripts and notebooks in the same project directory.
 
 ---
+# Use this to start and test - remember to replace your actual API key
+import openai
 
-With these steps, you can successfully create and use a `.env` file in your Jupyter Notebook! Let me know if you need further assistance.
+# Set your OpenAI API key
+openai.api_key = "your-api-key"  # Replace with your actual API key
+
+def get_llm_response(prompt, model="gpt-3.5-turbo"):
+    """
+    Sends a prompt to the OpenAI API and returns the model's response using ChatCompletion.
+    """
+    try:
+        # Use ChatCompletion with the new API structure
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.7,
+        )
+        return response['choices'][0]['message']['content']
+    except Exception as e:  # Generic exception handling
+        return f"An error occurred: {e}"
+
+def print_llm_response(response):
+    """
+    Prints the response from the LLM.
+    """
+    print("LLM Response:")
+    print(response)
+
+# Test the functions
+if __name__ == "__main__":
+    # Example prompt
+    prompt = "Write a four-line birthday poem for Tommy."
+    
+    # Get LLM response
+    response = get_llm_response(prompt)
+    
+    # Print the LLM response
+    print_llm_response(response)
+
+
